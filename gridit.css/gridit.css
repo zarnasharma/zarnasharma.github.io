@@ -84,11 +84,6 @@ body
 {
     width:20%;
 }
-.wrap-row /*Wraps two col-12 one below the other */
-{
-    -webkit-flex-wrap: wrap; /*Safari 6.1+*/
-    flex-wrap: wrap;
-}
 /*FRAMEWORK CHANGES FOR MEDIA QUERIES*/
 @media all and (max-width:768px)/*Set the media query break point - the screen width where you want the divs to stack one below the other*/
 {
