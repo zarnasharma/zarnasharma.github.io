@@ -2,7 +2,12 @@ html
 {
     font-family: 'Open Sans', sans-serif;
 }
-h1, h2, h3, a
+.row>a
+{
+    text-align:center;
+    margin:1rem auto;
+}
+h1, h2, h3
 {
     text-align:center;
 }
