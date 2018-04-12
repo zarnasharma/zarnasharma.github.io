@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Zarna Alpesh Sharma" />
+        <meta name="description" content="Zarna Sharma's Portfolio website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <title>Sweet Treats | Zarna Sharma</title>
+        <link rel="icon" href="images/logo.png" />
+        <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/portfolio-details.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <h1 class="accessibility-hidden">Zarna Sharma's portfolio - Project Sweet Treats</h1>
+        <header>
+            <nav id="nav">
+                <h2 class="accessibility-hidden">Navigation</h2>
+                <div class="wrapper">
+                   <div class="row">
+                    <div class="col-7">
+                        <a href="index.html" title="Go to Home Page">
+                            <img src="images/logo.png" class="logo" alt="Zarna Sharma's Portfolio Logo" />
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <ul id="main-nav">
+                            <li><a class="hover" href="index.html" title="Go to Home Page">Home</a></li>
+                            <li><a class="hover" href="aboutZarna.html" title="Go to About Page">Me</a></li>
+                            <li><a class="contact hover" href="#footer" onclick="changeContactClass();" title="Jump to Contact Section">Contact</a></li>
+                        </ul>
+                    </div>
+                   </div>
+                </div>
+            </nav>
+            <div id="respMenu" class="hide">
+                <div class="col-3">
+                    <a href="index.html" title="Go to Home Page"><img class="logo" src="images/logo.png" alt="Site Logo"/></a>
+                </div>
+                <div class="col-9">
+                    <button id="toggle-menu" title="Menu"><span class="fa fa-bars fa-2x" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+            <nav id="mini-nav" class="hide">
+                <h2 class="accessibility-hidden">Responsive Navigation</h2>
+                <ul>
+                    <li><a class="hover" href="index.html" title="Go to Home Page">Home</a></li>
+                    <li><a class="hover" href="aboutZarna.html" title="About Zarna">Me</a></li>
+                    <li><a class="contact hover" href="#footer" onclick="changeContactClass();" title="Jump to Contact Section">Contact</a></li>
+                </ul>
+            </nav>
+            <section id="introduction">
+                <h2 class="accessibility-hidden">Introduction</h2>
+                <div class="wrapper fadeEase">
+                    <div class="row">
+                        <h2>Sweet Treats</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="row">
+                                <h3>Summary</h3>
+                            </div>
+                            <div class="row">
+                                <p>The brief given - Create a fictional restaurant website; should have a rigged contest that the customer never wins. No plugin may be used for this feature; needs to be cross-browser compatible. Besides jQuery, no external libraries are allowed (no Bootstrap or Foundation etc.). This was a team project, I was responsible for the Home Page, and the Contest Page.</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <h3>Technologies</h3>
+                            </div>
+                            <div class="row">
+                                <p>HTML5, CSS3, Vanilla JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>The Process</p>
+                    </div>
+                    <div class="row">
+                        <a href="#process" title="Jump to Work Process">
+                            <span class="fa fa-angle-double-down fa-3x" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <a id="scrollUp" class="hide" href="#introduction" onclick="removeContactHover();" title="Jump to Top">
+            <span class="fa fa-angle-double-up fa-3x" aria-hidden="true"></span>
+            </a>
+        </header>
+        <main>
+            <div class="wrapper fadeEase">
+                <section id="process">
+                    <h2 class="accessibility-hidden">Project Sweet Treats - Process</h2>
+                    <div class="row">
+                        <div id="backBtn" class="col-1">
+                            <span id="back" class="fa fa-chevron-left fa-2x"  aria-hidden="true" title="Previous Stage"></span>
+                        </div>
+                        <div id="mainCarouselHolder" class="col-10">
+                            <div id="stageOne" class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <span class="circle">1</span>
+                                    </div>
+                                    <div class="row">
+                                        <h3>Research</h3>
+                                    </div>
+                                    <div class="row">
+                                        <p>For the home page, I was required to develop an image carousel, a daily specials box, and a categories grid. For the contest page, the requirement expected the customer to never win. My research mostly comprised of finding out different types of restaurant contests, and how to not give away that it was rigged.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="stageTwo" class="hide">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <span class="circle">2</span>
+                                    </div>
+                                    <div class="row">
+                                        <h3>Storyboarding</h3>
+                                    </div>
+                                    <div class="row">
+                                        <p>I found out that most contests were lucky-draw based, and didn't really require much user interaction. In order to build something engaging and interesting, after my team's approval, I decided to develop a simple, rigged memory game around the concept of Cookie Monster as ours was a desserts-only restaurant.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="stageThree" class="hide">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <span class="circle">3</span>
+                                    </div>
+                                    <div class="row">
+                                        <h3>Phase Planning</h3>
+                                    </div>
+                                    <div class="row">
+                                        <p>I decided to build the home page first, as it was a common page that linked to all other pages developed by my other teammates. For the contest page, I planned to build a game that would encourage the user to collect a set amount of cookies in order to win a special gift from the restaurant. However, apart from giving a subtle hint about the Cookie Monster being on the loose, the user would not know that the game terminates at any level before the target.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="stageFour" class="hide">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <span class="circle">4</span>
+                                    </div>
+                                    <div class="row">
+                                        <h3>Development</h3>
+                                    </div>
+                                    <div class="row">
+                                        <p>I chose to build all my features using Vanilla JavaScript, and not jQuery. The memory game has 3 fallback points, mostly to ensure that the user does not guess that the game is rigged, at least not in the first couple of trials: the game terminates automatically at level 11, there is a random number function that runs during the gameplay, and the moment the expected number is generated, the game terminates, and finally, there is a timer that ends the game after 30 seconds, if the user gets stuck at a level, or does not respond. Responsiveness of the website was taken care by the simple grid system I use in all my projects. You can check it out <a href="http://zarnasharma.github.io/gridit.css/" title="Link to GridIt.css">here.</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="stageFive" class="hide">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <span class="circle">5</span>
+                                    </div>
+                                    <div class="row">
+                                        <h3>Tests &amp; Tweaks</h3>
+                                    </div>
+                                    <div class="row">
+                                        <p>The interesting part about this phase was when I carried out user tests and found out that it was, indeed, difficult for the users to gauge that the game was rigged.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="nextBtn" class="col-1">
+                            <span id="next" class="fa fa-chevron-right fa-2x" aria-hidden="true" title="Next Stage"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3>The Outcome</h3>
+                    </div>
+                    <div class="row">
+                        <a href="#outcome" title="Jump to Screenshots">
+                            <span class="fa fa-angle-double-down fa-3x" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </section>
+                <section id="outcome">
+                    <h2 class="accessibility-hidden">SweetTreats Screenshots</h2>
+                    <div class="row backgroundPink">
+                        <div class="col-8">
+                            <img class="responsiveImage" src="images/sweetTreatsDesk.jpg" alt="Sweet Treats Desktop Shot"/>
+                        </div>
+                    </div>
+                    <div class="row backgroundBlue">
+                        <div class="col-8">
+                            <img class="responsiveImage" src="images/SweetTreatsFull.jpg" alt="Sweet Treats Full Shot"/>
+                        </div>
+                    </div>
+                    <div class="row backgroundPink">
+                        <div class="col-8">
+                            <img class="responsiveImage" src="images/sweetTreatsResp.jpg" alt="Sweet Treats Mobile and Tablet Shot"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a href="sweettreats/index.html" class="input" target="_blank" title="Link to Sweet Treats Demo Site">View Site</a>
+                    </div>
+                    <div class="row">
+                        <p>I learned about how those fancy jQuery sliders, and hover effects work, without actually using jQuery. Also, I learned that deconstructing any problem, and building it chunk by chunk always does the job! I thoroughly began to enjoy JavaScript after working on this project.
+                        </p>
+                    </div>
+                </section>
+                <section id="otherProjects">
+                    <div class="row">
+                        <h3>Other Projects</h3>
+                    </div>
+                    <div class="row">
+                        <a href="mathmania.html" class="input" title="Link to MathMania Details Page">Math Mania</a>
+                        <a href="http://zarnasharma.github.io/gridit.css/" class="input" title="Link to GridIt.css Page" target="_blank">GridIt.css</a>
+                        <a href="hellohuman.html" class="input" title="Link to HelloHuman Details Page">Hello Human</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer id="footer">
+            <h2 class="accessibility-hidden">Contact Information</h2>
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <a href="https://github.com/zarnasharma" title="Zarna's GitHub Profile">
+                                GitHub
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="https://ca.linkedin.com/in/zarnasharma" title="Zarna's LinkedIn Profile">
+                                LinkedIn
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="mailto:hello@zarnasharma.com" title="Email Zarna">
+                                hello@zarnasharma.com
+                            </a>
+                        </div>
+                        <div class="row">
+                            <p>2016 - Eternity &copy; Zarna Sharma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="js/portfolio-details.js"></script>
+        <!--Google Analytics-->
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-78025619-1', 'auto');
+                ga('send', 'pageview');
+        </script>
+    </body>
+</html>

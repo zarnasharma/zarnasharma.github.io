@@ -1,10 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Zarna Sharma | Web Developer</title>
-		<meta charset="utf-8"/>
-	</head>
-	<body>
-		<h1>Hello World !</h1>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Zarna Alpesh Sharma" />
+        <meta name="description" content="Zarna Alpesh Sharma's Portfolio website" />
+        <title>Zarna Sharma | Web Developer</title>
+        <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/portfolio.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates' rel='stylesheet' type='text/css'/>
+    </head>
+    <body>
+        <h1 class="accessibility-hidden">Zarna Sharma&rsquo;s portfolio</h1>
+        <header>
+            <nav id="nav">
+                <h2 class="accessibility-hidden">Navigation</h2>
+                <div class="wrapper">
+                   <div class="row">
+                    <div class="col-7">
+                        <a href="index.html">
+                            <img src="images/logo.png" class="logo" alt="Zarna Sharma's Portfolio Logo" />
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <ul id="main-nav">
+                            <li><a class="home hover selected" href="index.html">Home</a></li>
+                            <li><a class="hover" href="aboutZarna.html">Me</a></li>
+                            <li><a class="contact hover" href="#footer" onclick="changeContactClass();">Contact</a></li>
+                        </ul>
+                    </div>
+                   </div>
+                </div>
+            </nav>
+            <div id="respMenu" class="hide">
+                <div class="col-3">
+                    <a href="index.html"><img class="logo" src="images/logo.png" alt="Site Logo"/></a>
+                </div>
+                <div class="col-9">
+                    <button id="toggle-menu"><span class="fa fa-bars fa-2x" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+            <nav id="mini-nav" class="hide">
+                <h2 class="accessibility-hidden">Responsive Navigation</h2>
+                <ul>
+                    <li><a class="home hover selected" href="index.html">Home</a></li>
+                    <li><a class="hover" href="aboutZarna.html">Me</a></li>
+                    <li><a class="contact hover" href="#footer" onclick="changeContactClass();">Contact</a></li>
+                </ul>
+            </nav>
+            <section id="introduction">
+                <h2 class="accessibility-hidden">Introduction</h2>
+                <div class="wrapper fadeEase">
+                    <div class="wrap-row">
+                        <div class="col-12">
+                            <h2>Zarna Sharma</h2>
+                        </div>
+                        <div class="col-12">
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>Academic Projects</p>
+                    </div>
+                    <div class="row">
+                        <a href="#projects">
+                            <span class="fa fa-angle-double-down fa-3x" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <a id="scrollUp" class="hide" href="#introduction" onclick="changeToHome();">
+                <span class="fa fa-angle-double-up fa-3x" aria-hidden="true"></span>
+            </a>
+        </header>
+        <main id="main">
+            <div class="wrapper">
+                <section id="projects">
+                    <h2 class="accessibility-hidden">Zarna Sharma's projects</h2>
+                    <div class="row slideFromLeft">
+                        <div class="col-6">
+                            <img class="responsiveImage" src="images/sweettreats.jpg" alt="sweettreats project screenshot" />
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <h3>Sweet Treats</h3>
+                            </div>
+                            <div class="row">
+                                <p>A website for a desserts-only restaurant. The homepage, and the contest page - a memory game with a twist, are developed by me.</p>
+                            </div>
+                            <div class="row">
+                                <a href="sweettreats/index.html" class="input" target="_blank">Demo</a>
+                                <a href="sweettreats.html" class="input">Details</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row slideFromRight">
+                        <div class="col-6">
+                            <div class="row">
+                                <h3>Math Mania</h3>
+                            </div>
+                            <div class="row">
+                                <p>A web boardgame you can play to polish your basic arithmetic skills, or well, just to kill time!</p>
+                            </div>
+                            <div class="row">
+                                <a href="mathmania/index.html" class="input" target="_blank">Demo</a>
+                                <a href="mathmania.html" class="input">Details</a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <img class="responsiveImage" src="images/mathmania.jpg" alt="mathmania project screenshot" />
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+          <footer id="footer">
+            <h2 class="accessibility-hidden">Contact Information</h2>
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <a href="https://github.com/zarnasharma" title="Zarna's GitHub Profile">
+                                GitHub
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="https://ca.linkedin.com/in/zarnasharma" title="Zarna's LinkedIn Profile">
+                                LinkedIn
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="mailto:dev.zarnasharma@gmail.com" title="Email Zarna">
+                                dev.zarnasharma@gmail.com
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="https://github.com/zarnasharma/zarnasharma.github.io" title="Repository">Zero Rights Reserved</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="js/portfolio-new.js"></script>
+    </body>
 </html>

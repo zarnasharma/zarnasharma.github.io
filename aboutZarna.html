@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Zarna Alpesh Sharma" />
+        <meta name="description" content="Zarna Sharma's Portfolio website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0"/>
+        <title>Me | Zarna Sharma</title>
+        <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/portfolio-about.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <h1 class="accessibility-hidden">About Zarna Sharma</h1>
+        <header>
+            <nav id="nav">
+                <h2 class="accessibility-hidden">Navigation</h2>
+                <div class="wrapper">
+                   <div class="row">
+                    <div class="col-7">
+                        <a href="index.html" title="Go to Home Page">
+                            <img src="images/logo.png" class="logo" alt="Zarna Sharma's Portfolio Logo" />
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <ul id="main-nav">
+                            <li><a class="hover" href="index.html" title="Go to Home Page">Home</a></li>
+                            <li><a class="me hover selected" href="aboutZarna.html" title="About Zarna">Me</a></li>
+                            <li><a class="contact hover" href="#footer" onclick="changeContactClass();" title="Jump to Contact Section">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                   </div>
+                </div>
+            </nav>
+            <div id="respMenu" class="hide">
+                <div class="col-3">
+                    <a href="index.html" title="Go to Home Page"><img class="logo" src="images/logo.png" alt="Site Logo"/></a>
+                </div>
+                <div class="col-9">
+                    <button id="toggle-menu" title="Menu"><span class="fa fa-bars fa-2x" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+            <nav id="mini-nav" class="hide">
+                <h2 class="accessibility-hidden">Responsive Navigation</h2>
+                <ul>
+                    <li>
+                        <a class="hover" href="index.html" title="Go to Home Page">Home</a></li>
+                    <li>
+                        <a class="me hover selected" href="aboutZarna.html" title="About Zarna">Me</a></li>
+                    <li><a class="contact hover" href="#footer" onclick="changeContactClass();" title="Jump to Contact Section">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <section id="introduction">
+                <h2 class="accessibility-hidden">Introduction</h2>
+                <div class="wrapper fadeEase">
+                     <div class="row">
+                        <h2>Hello!</h2>
+                     </div>
+                     <div class="row">
+                        <p>I am Zarna, a Web Developer currently working at Flywheel Strategic, Toronto. <br/> <br/> 
+                            Being a cognitive sciences &amp; psychology enthusiast, I like to observe &amp; understand human behaviour - a skill that has been useful while working on my projects. &quot;All for one, &amp; one for all&quot; is a motto I live off when in a team, &amp; &quot;Why not?&quot; when I set out on individual programming ventures.
+                            <br/><br/>  As a developer, I endeavour to deliver applications that are effective &amp; engaging.</p>
+                     </div>
+                    <div class="row">
+                        <p>The Technicals</p>
+                    </div>
+                    <div class="row">
+                        <a href="#technicals" title="Jump to Technicals">
+                            <span class="fa fa-angle-double-down fa-3x" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <a id="scrollUp" class="hide" href="#introduction" onclick="changeToMe();" title="Jump to Top">
+                <span class="fa fa-angle-double-up fa-3x" aria-hidden="true"></span>
+            </a>
+        </header>
+        <main id="main">
+            <div class="wrapper fadeEase">
+                <section id="technicals">
+                    <h2 class="accessibility-hidden">More About Zarna Sharma</h2>
+                    <div class="row">
+                        <div class="col-5">
+                            <h3>Skills</h3>
+                        </div>
+                        <div class="col-7">
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul class="simple-list">
+                                        <li>HTML5</li>
+                                        <li>CSS3</li>
+                                        <li>JavaScript / jQuery</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="simple-list">
+                                        <li>Visual C#</li>
+                                        <li>PHP</li>
+                                        <li>Objective C</li>
+                                        <li>SQL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <ul class="simple-list">
+                                    <li>Progress Sitefinity</li>
+                                    <li>WordPress</li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="simple-list">
+                                    <li>Responsive Design &amp; Development</li>
+                                    <li>User Research &amp; Testing</li>
+                                    <li>Product Design &amp; Planning</li>
+                                    <li>Statistical Data Analysis</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <h3>Experience</h3>
+                        </div>
+                        <div class="col-7">
+                            <ul class="technicals-ul">
+                                <li>.NET Developer</li>
+                                <li>Flywheel Strategic, Toronto</li>
+                                <li>September 2016 - Present</li>
+                            </ul>
+                            <ul class="technicals-ul">
+                                <li>Web Development Intern</li>
+                                <li>Kids Help Phone, Toronto</li>
+                                <li>July 2016 - August 2016</li>
+                            </ul>
+                            <ul class="technicals-ul">
+                                <li>Web Development Intern</li>
+                                <li>CreativeWebSys, Mumbai</li>
+                                <li>November 2013 - October 2014</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <h3>Education</h3>
+                        </div>
+                        <div class="col-7">
+                            <ul class="technicals-ul">
+                                <li>Post-Graduate Certificate in Web Development</li>
+                                <li>Humber College, Toronto</li>
+                                <li>September 2015 - August 2016</li>
+                            </ul>
+                            <ul class="technicals-ul">
+                                <li>Master of Science in Life Sciences (Neurobiology)</li>
+                                <li>Sophia College, Mumbai</li>
+                                <li>July 2013 - May 2015</li>
+                            </ul>
+                            <ul class="technicals-ul">
+                                <li>Diploma in Software Engineering</li>
+                                <li>National Institute of Information Technology, Mumbai</li>
+                                <li>September 2010 - November 2014</li>
+                            </ul>
+                            <ul class="technicals-ul">
+                                <li>Bachelor of Science in Life Sciences, &amp; Biochemistry</li>
+                                <li>Kishinchand Chellaram College, Mumbai</li>
+                                <li>July 2010 - May 2013</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <h3>Interests</h3>
+                        </div>
+                        <div class="col-7">
+                            <ul class="simple-list">
+                                <li>Machine Learning</li>
+                                <li>Gamification</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>Got a challenge for me? Or just curious to know more? Contact me!</p>
+                    </div>
+                    <div class="row">
+                        <a href="#footer" title="Jump to Contact">
+                            <span class="fa fa-angle-double-down fa-3x" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer id="footer">
+            <h2 class="accessibility-hidden">Contact Information</h2>
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <a href="https://github.com/zarnasharma" title="Zarna's GitHub Profile">
+                                GitHub
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="https://ca.linkedin.com/in/zarnasharma" title="Zarna's LinkedIn Profile">
+                                LinkedIn
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="mailto:dev.zarnasharma@gmail.com" title="Email Zarna">
+                                dev.zarnasharma@gmail.com
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="https://github.com/zarnasharma/zarnasharma.github.io" title="Repository">Zero Rights Reserved</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="js/portfolio-about.js"></script>
+    </body>
+</html>
