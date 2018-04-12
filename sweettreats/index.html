@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+        <meta name="author" content="Zarna Alpesh Sharma" />
+        <meta name="description" content="Andre's sweettreats homepage" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+		<title>Sweet Treats</title>
+		<link rel="stylesheet" type="text/css" href="css/styleAndreZarna.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'/>
+		<script src="js/HomePage.js"></script>
+	</head>
+	<body>
+        <h1 class="always-hidden">Zarna's Project: SweetTreats HomePage</h1>
+		<div id="main-wrapper">
+			<div id="wrapper">
+				<header id="header">
+                    <h2 class="always-hidden">Logo and Navigation</h2>
+					<section id="logoSpan">
+                        <h3 class="always-hidden">Logo</h3>
+						<div class="row">
+							<img src="images/logo.png" alt="Andre SweetTreats Logo" />
+						</div>
+					</section>
+					<nav id="main-navigation">
+                        <h3 class="always-hidden">Main Navigation</h3>
+						<div class="row">
+							<ul>
+								<li class="selected"><a href="index.html">Home</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Menu</a></li>
+								<li><a href="#">Daily Specials</a></li>
+								<li><a href="#">Events</a></li>
+								<li><a href="contests.html">Contests</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</nav>
+                    <div id="respMenu" class="row">
+						<div class="col-3">
+							<a href="index.html"><img class="logo" src="images/logo.png" alt="Site Logo"/></a>
+						</div>
+						<div class="col-9">
+							<button id="toggle-menu"><span class="fa fa-bars fa-2x" aria-hidden="true"></span>
+							</button>
+						</div>
+					</div>
+					<nav id="mini-nav" class="toggleHide">
+						<h2 class="always-hidden">Responsive Navigation</h2>
+						<ul>
+							<li><a class="selected" href="index.html">Home</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Menu</a></li>
+							<li><a href="#">Daily Specials</a></li>
+							<li><a href="#">Events</a></li>
+							<li><a href="contests.html">Contests</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+				</header><!--End of Header-->
+				<main>
+					<section id="carousel">
+                        <h2 class="always-hidden">Image Carousel</h2>
+						<div id="carouselContainer" class="row">
+							<img id="carouselMainImg"  class="responsiveImg row" src="images/cOne.jpeg" alt="carousel Images"/>
+						</div>
+						<div id="carouselLinkers" class="row">
+							<ul id="linkImages">
+								<li>
+									<div id="imgOne" class="linkers-selected"></div>
+								</li>
+								<li>
+									<div id="imgTwo" class="linkers"></div>
+								</li>
+								<li>
+									<div id="imgThree" class="linkers"></div>
+								</li>
+								<li>
+									<div id="imgFour" class="linkers"></div>
+								</li>
+								<li>
+									<div id="imgFive" class="linkers"></div>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section id="descriptions">
+						<h2 class="always-hidden">Main Content</h2>
+						<div class="row">
+							<div class="col-8">
+								<div class="row">
+                                    <h2 class="line"><span>Hi There !</span></h2>
+								</div>
+								<div class="row">
+									<p>After completing his training in one of the most famous pastry school in the world, Ferrandi School in Paris, moved back to Canada to open his own bakery. Andre’s SweetTreats was founded in 1994 in Toronto. Our concept is to offer affordable but high quality pastries. All our products are handmade and carefully prepared by our pastry cook Dan and baker Michel. We offer different sort of products such as cupcakes, muffins, cheesecakes, cookies and of course French macarons!</p>
+								</div>
+								<div id="read">
+									<a id="readMore" href="#">Read more..</a>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="row">
+									<h2 class="line"><span>Daily Specials</span></h2>
+								</div>
+								<div class="row">
+									<div id="specialcontainer" class="col-12">
+                                        <img id="special" class="responsiveImg" src="#" alt="daily special-cake"/>
+                                        <div id="specialBox">
+                                            <p>Today's Special</p>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="ourProducts">
+                        <h2 class="always-hidden">Products</h2>
+						<div class="row">
+							<h2 class="line"><span>Our Products</span></h2>
+						</div>
+						<div class="row">
+							<div class="col-4">
+								<div class="row">
+									<div id="one" onmouseover="showBlock(this)" onfocus="showBlock(this)" class="prodPack">
+                                        <img src="images/first.jpeg" class="responsiveImg" alt="cakeOne"/>
+                                        <div id="first" class="moreProds">
+                                            <a href="#">Want More ?</a>
+                                        </div>
+									</div>
+								</div>
+								<div class="row">
+									<h3>Cupcakes</h3>
+								</div>
+								<div class="row">
+									<p>
+										A speciality of SweetTreats, cupcakes made here are absolutely scrumptious! Have you found your favourite yet?
+									</p>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="row">
+									<div id="two" onmouseover="showBlock(this)" onfocus="showBlock(this)" class="prodPack">
+                                        <img  src="images/second.jpeg" class="responsiveImg" alt="cakeOne"/>
+                                        <div id="second" class="moreProds">
+                                            <a href="#">Want More ?</a>
+                                        </div>
+									</div>
+								</div>
+								<div class="row">
+									<h3>French macaroons</h3>
+								</div>
+								<div class="row">
+									<p>
+										New additions to our menu, french macaroons are high in demand! Visit us soon to grab your share.
+									</p>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="row">
+									<div id="three" onmouseover="showBlock(this)" onfocus="showBlock(this)" class="prodPack">
+                                        <img src="images/third.jpeg" class="responsiveImg" alt="cakeOne"/>
+                                        <div id="third" class="moreProds">
+                                            <a href="#">Want More ?</a>
+                                        </div>
+									</div>
+								</div>
+								<div class="row">
+									<h3>Cookies</h3>
+								</div>
+								<div class="row">
+									<p>
+										Cookies prepared at SweetTreats brings out the Cookie Monster in all of us.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-4">
+								<div class="row">
+									<div id="four" onmouseover="showBlock(this)" onfocus="showBlock(this)" class="prodPack">
+                                        <img src="images/fourth.jpeg" class="responsiveImg" alt="cakeOne"/>
+                                        <div id="fourth" class="moreProds">
+                                            <a href="#">Want More ?</a>
+                                        </div>
+									</div>
+								</div>
+								<div class="row">
+									<h3>Cakes</h3>
+								</div>
+								<div class="row">
+									<p>
+										Birthdays, anniversaries, be it anything! We have the right cake for every occasion.
+									</p>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="row">
+									<div id="five" onmouseover="showBlock(this)" onfocus="showBlock(this)" class="prodPack">
+                                        <img src="images/fifth.jpeg" class="responsiveImg" alt="cakeOne"/>
+                                        <div id="fifth" class="moreProds">
+                                            <a href="#">Want More ?</a>
+                                        </div>
+									</div>
+								</div>
+								<div class="row">
+									<h3>Cheesecakes</h3>
+								</div>
+								<div class="row">
+									<p>
+										Cheese and cakes - Two things that are delicious on their own. Find out how they taste together.
+									</p>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="row">
+									<div id="six" onmouseover="showBlock(this)" onfocus="showBlock(this)" class="prodPack">
+                                        <img src="images/sixth.jpeg" class="responsiveImg" alt="cakeOne"/>
+                                        <div id="sixth" class="moreProds">
+                                            <a href="#">Want More ?</a>
+                                        </div>
+									</div>
+								</div>
+								<div class="row">
+									<h3>Pies</h3>
+								</div>
+								<div class="row">
+									<p>
+										We have an amazing range of pies baked fresh every day! From classics to modern, a pie of every type!
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+				</main><!--End of Main -->
+			</div><!-- End of wrapper -->
+			<footer id="footer">
+                <h2 class="always-hidden">Footer</h2>
+                <div class="row">
+                    <p><a href="#header">Jump to top</a></p>
+                </div>
+				<div class="row">
+					<div class="col-8">
+						<nav id="footer-nav">
+                            <h3 class="always-hidden">Footer Navigation</h3>
+							<ul>
+								<li><a href="#">Gift Cards</a></li>
+								<li>|</li>
+								<li><a href="#">Site Map</a></li>
+								<li>|</li>
+								<li><a href="#">Careers</a></li>
+								<li>|</li>
+								<li><a href="#">Locations</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-4">
+						<div id="spans">
+                            <span class="fa fa-facebook"></span>
+							<span class="fa fa-instagram"></span>
+							<span class="fa fa-pinterest"></span>
+							<span class="fa fa-twitter"></span>
+						</div>
+					</div>
+				</div>
+			</footer><!-- End of footer -->
+		</div><!--End of main wrapper-->
+                <!--Google Analytics-->
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-78025619-1', 'auto');
+                ga('send', 'pageview');
+        </script>
+	</body><!--End of body -->
+</html>

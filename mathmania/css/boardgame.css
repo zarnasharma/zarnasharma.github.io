@@ -1,0 +1,385 @@
+/*MATH MANIA CSS*/
+/*TABLE OF CONTENTS*/
+
+/* 1. GENERAL STYLINGS
+   2. RESPONSIVE FRAMEWORK
+   3. LAYOUTS
+   4. TYPOGRAPHY
+   5. MEDIA QUERIES
+   6. ANIMATION   */
+
+/* 1. GENERAL STYLINGS*/
+html
+{
+	box-sizing: border-box;
+	font-size:18px;
+}
+*, *:before, *:after
+{
+	box-sizing:inherit;
+}
+body
+{
+	max-width:100%;
+	margin:0 auto;
+	background:url("../Images/background.jpg") repeat fixed;
+}
+.always-hidden
+{
+	margin-left:-100000px;
+	position:absolute;
+}
+/*2. RESPONSIVE FRAMEWORK*/
+.responsiveImg
+{
+	width:100%;
+	height:auto;
+}
+.row
+{
+	width:100%;
+	display:flex;
+}	
+.col-12
+{
+	width:100%;
+}
+.col-11
+{
+	width:91.66%
+}
+.col-10
+{
+	width:83.33%
+}
+.col-9
+{
+	width:75%
+}
+.col-8
+{
+	width:66.66%
+}
+.col-7
+{
+	width:58.33%
+}
+.col-6
+{
+	width:50%
+}
+.col-5
+{
+	width:41.66%
+}
+.col-4
+{
+	width:33.33%
+}
+.col-3
+{
+	width:25%
+}
+.col-2
+{
+	width:16.66%
+}
+
+/*Responsive Framework Ends*/
+/* 3. LAYOUTS*/
+h2
+{
+	margin:0 auto;
+}
+header, #main-wrapper
+{
+    margin-bottom:3rem;
+}
+#main
+{
+	margin:2rem;
+	background-color: #EDF9FC;
+	box-shadow:1px 1px 5px #999;
+}
+#sidebar
+{
+	margin:2rem;
+	background-color:#DAFACD;
+	box-shadow:1px 1px 5px #999;	
+}
+#progressBar
+{
+	border:2px solid #550000;
+	border-radius:10px;
+	margin-left:1rem;
+	margin-right:1rem;
+	padding:5px;
+}
+#filler
+{
+	height:1rem;
+	border-radius:10px;
+	transition:width 3s;
+}
+#topScores div
+{
+	margin-bottom:1rem;
+}
+#welcome
+{
+	margin:0;
+}
+#wingame p
+{
+	margin:2rem auto;
+}
+.gameBlocks
+{
+	border:1px solid #550000;
+	font-weight:bold;
+	background-color:#fff;
+	transition:background-color 5s;
+}
+.gameBlocksTransforms
+{
+	background-color:#73B286;
+}
+#option1 p, #option2 p, #option3 p, #option4 p
+{
+	cursor:pointer;
+	font-weight:bold;
+	border:1px solid #040F12;
+	border-radius:10px;
+	box-shadow:1px 1px 2px #040F12;
+	margin:5px;
+	padding-top:5px;
+	padding-bottom:5px;
+	background-color:#fff;
+}
+#main-game, #gameIntro, #wingame, #losegame
+{
+    background-color:#EDF9FC;
+}
+#main-game p
+{
+	text-align:center;
+	font-size:1.5rem;
+}
+#gameName
+{
+	background-color: #040F12;
+}
+#gameName h1
+{ 
+	margin:1rem auto 0 auto;
+}
+#gameName a
+{ 
+	text-decoration:none;
+	color:#fff;
+}
+#footer
+{
+	background-color:#040F12;
+	color:#fff;
+	bottom:0;
+}
+#footer p
+{
+	margin: 1rem auto;
+}
+#gameIntro, #topScores, #wingame, #losegame
+{
+	padding:1em;
+}
+#wingame, #losegame
+{
+	margin-bottom:2rem;
+}
+#wingame p, #losegame p
+{
+	text-align:center;
+}
+img
+{
+	animation:starZoom;
+	animation-duration:2s;
+	animation-iteration-count:infinite;
+}
+.centreImage
+{
+	margin:1rem auto;
+}
+#main-timer div
+{
+	margin: 0 5px;
+}
+#timerBox p, #chanceBox p, #questionBlock p, #diceBox p
+{
+	font-weight:bold;
+	color:#040F12;
+	text-align:center;
+	border-radius:10px;
+}
+#main-game, #wingame, #losegame
+{
+	display:none;
+}  
+ button
+{
+	background-color:#fff;
+	cursor:pointer;
+	border:3px solid #040F12;
+	height:50px;
+	border-radius:10px;
+	font-size:1rem;
+	margin:1rem auto;
+	box-shadow:1px 5px 5px #999;
+}
+/* 4. TYPOGRAPHY*/
+h1
+{
+font-family: 'Henny Penny', cursive;
+	font-size:2.5em;
+}
+span
+{
+	font-family: 'Henny Penny', cursive;
+}
+p, li, h2, h3
+{
+	font-family: 'Lora', serif;
+}
+/* 5. MEDIA QUERIES*/
+@media all and (max-width:768px)
+{
+	html
+	{
+		font-size:18px;
+	}
+	#main-game p
+	{
+		text-align:center;
+		font-size:1rem;
+	}
+	#main-wrapper
+	{
+		display:block;
+	}
+	#main, #sidebar
+	{
+		margin:1rem auto;
+	}
+	.col-3
+	{
+		width:75%;
+	}  
+}
+@media all and (max-width:450px)
+{
+	html
+	{
+		font-size:14px;
+	}
+	#main-game p
+	{
+		text-align:center;
+		font-size:1rem;
+	}
+	.col-9
+	{
+		width:95%;
+	}
+	.col-3
+	{
+		width:95%;
+	}  
+}
+
+@media all and (max-width:360px)
+{
+	html
+	{
+	font-size:16px;
+	}
+	#option1 p, #option2 p, #option3 p, #option4 p
+	{
+		font-size:14px;
+	}
+	#main-game p
+	{
+		text-align:center;
+		font-size:1rem;
+	}
+}
+@media all and (max-width:320px)
+{
+	#option1 p, #option2 p, #option3 p, #option4 p
+	{
+		font-size:14px;
+	}
+}
+
+/* 6. ANIMATION*/
+/*The webkits throw validation errors but required for browser compatibility*/
+@-moz-keyframes starZoom
+{
+	0%
+	{
+		transform:scale(1);
+	}
+	50%
+	{
+		transform:scale(1.1);
+	}
+	100%
+	{
+		transform:scale(1);
+	}
+}
+@-o-keyframes starZoom
+{
+	0%
+	{
+		transform:scale(1);
+	}
+	50%
+	{
+		transform:scale(1.1);
+	}
+	100%
+	{
+		transform:scale(1);
+	}
+}
+@-webkit-keyframes starZoom
+{
+	0%
+	{
+		transform:scale(1);
+	}
+	50%
+	{
+		transform:scale(1.1);
+	}
+	100%
+	{
+		transform:scale(1);
+	}
+}
+@keyframes starZoom
+{
+	0%
+	{
+		transform:scale(1);
+	}
+	50%
+	{
+		transform:scale(1.1);
+	}
+	100%
+	{
+		transform:scale(1);
+	}
+}
+

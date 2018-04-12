@@ -1,0 +1,623 @@
+/*ANDRE SWEETTREATS
+
+TABLE OF CONTENTS:
+1. SETTING UP THE PAGE
+2. HEADER
+3. FOOTER
+4. RESPONSIVE FRAMEWORK
+5. HOME PAGE STYLES
+6. CONTEST PAGE STYLES
+7. MEDIA QUERY FOR TABLET
+8. MEDIA QUERY FOR SCREEN A LITTLE SMALLER THAN TABLET
+9. MEDIA QUERY FOR PHONE
+
+*/
+/*1. SETTING UP THE PAGE*/
+html
+{
+	box-sizing:border-box;
+	font-size:16px;
+}
+*, *:before, *:after
+{
+	box-sizing:inherit;
+}
+body
+{
+	max-width:100%;
+	background:url("../images/background.jpg") repeat fixed;
+}
+/*Some common classes and ids*/
+#main-wrapper
+{
+	max-width:980px;
+	background-color:#fff;
+	box-shadow:1px 1px 5px gray;
+	margin: 1rem auto;
+}
+#wrapper
+{
+	width:90%;
+	margin:0 auto;
+}
+.always-hidden /*this is used for all headings for outlining*/
+{
+	margin-left:-100000px;
+	position: absolute;
+}
+.line
+{
+	width:100%;
+	text-align:center;
+	border-bottom:1px solid #f8d6dc;
+	line-height:0.1em;
+	margin:10px 0 20px;
+}
+.line span
+{
+	background:#fff;
+	padding:0 20px;
+}
+h2
+{
+	color:#6d6e70;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-family: 'Oswald', sans-serif;
+	margin:1em auto;
+	font-size:18px;
+}
+h3
+{
+	color:#784960;
+	margin:1em auto;
+}
+p
+{
+	color:#6d6e70;
+	padding:0.5em;
+    text-align:center;
+}
+/* 2. HEADER */
+#logoSpan img
+{
+	margin:2rem auto;
+}
+#main-navigation
+{
+	border-bottom:1px solid #fbdcec;
+}
+#main-navigation ul
+{
+	list-style:none;
+	margin:0 auto;
+}
+#main-navigation ul li
+{
+	margin-right:1.5rem;
+	display:inline-block;
+}
+#main-navigation ul li a
+{
+	text-decoration:none;
+	color:#6d6e70;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-family: 'Oswald', sans-serif;
+}
+#main-navigation ul li a:hover
+{
+	border-bottom:6px solid #f8d6dc;
+}
+.selected /* Highlights the current page */
+{
+	border-bottom:5px solid #f8d6dc;
+}
+#respMenu /*Responsive nav remains hidden until screen hits breakpoint*/
+{
+    display:none;
+}
+.toggleHide
+{
+    display:none;
+}
+/* 3.FOOTER */
+#footer
+{
+    background-color:#6d6e70;
+}
+#footer>.row>p
+{
+    margin:0 auto;
+}
+#footer>.row>p>a
+{
+    text-decoration:none;
+	color:#fff;
+	font-family:Helvetica, sans-serif, serif;
+	font-size:0.9em;
+}
+#footer-nav ul
+{
+	list-style:none;
+}
+#footer-nav ul li
+{
+	display:inline-block;
+	color:#fff;
+}
+#footer-nav ul li a
+{
+	text-decoration:none;
+	color:#fff;
+	margin:1em;
+	font-family:Helvetica, sans-serif, serif;
+	font-size:0.9em;
+}
+#footer-nav ul li a:hover, #footer>.row>p>a:hover
+{
+    text-decoration:underline;
+}
+#spans /* Social Media Links */
+{
+	color:#fff;
+	float:right;
+	margin: 1rem 3rem;
+}
+#spans span
+{
+	margin:0 1em;
+}
+/* 4. RESPONSIVE FRAMEWORK */
+.responsiveImg
+{
+	width:100%;
+	height:100%;/* This is to fix the height issue in Chrome */
+}
+.row
+{
+	width:100%;
+    display:webkit-flex;/* Safari */
+	display:flex;
+    webkit-flex-wrap:wrap;/*Safari 6.1+*/
+    flex-wrap:wrap;
+}
+.col-1
+{
+	width:7%;
+}
+.col-3
+{
+	width:25%;
+}
+.col-4
+{
+	width:33.33%;
+}
+.col-6
+{
+    width:50%;
+}
+.col-8
+{
+	width:66.66%;
+}
+.col-12
+{
+    width:100%;
+}
+/* 5. HOME PAGE STYLES*/
+/* Image Carousel */
+#carouselContainer
+{
+	margin-top:1rem;
+}
+#linkImages /*Image navigation*/
+{
+	list-style:none;
+	margin:1rem auto;
+}
+#linkImages li
+{
+	display:inline-block;
+	cursor:pointer;
+}
+#linkImages li:first-child
+{
+	margin-left:-2.5rem;
+}
+.linkers /*Gray box when the image is not displayed */
+{
+	background-color:#b3b3b3;
+	height:0.8rem;
+	width:1.5rem;
+}
+.linkers-selected /* Pink box when the image is displayed*/
+{
+	background-color:#f8d6dc;
+	height:0.8rem;
+	width:1.5rem;
+}
+/* About Information */
+#descriptions .col-8, #descriptions .col-4
+{
+	padding:0.5rem;
+}
+#descriptions p
+{
+	margin-top:0;
+}
+#descriptions
+{
+	padding-bottom:3rem;
+}
+#readMore
+{
+	text-decoration:none;
+	color:#6d6e70;
+	font-size:14px;
+}
+#read
+{
+	float:right;
+	padding-right:1.5em;
+}
+/* Daily special Box*/
+#specialcontainer
+{
+	display:flex;
+	position:relative;
+}
+#specialBox
+{
+	background-color:#fbdcec;
+	opacity:0.8;
+	display:none;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:10000;
+	text-align:center;
+	cursor:pointer;
+}
+#specialBox p /*Text displayed on when the image is hovered upon*/
+{
+	color:#784960;
+	margin:0 auto;
+	font-size:1.3rem;
+}
+/* Products Blocks */
+#ourProducts
+{
+	padding-bottom:2rem;
+}
+#ourProducts img
+{
+	padding:0.5em;
+}
+#ourProducts .moreProds
+{
+	left:0;
+	right:0;
+	bottom:0;
+}
+#ourProducts h3
+{
+	margin:0 auto;
+}
+#ourProducts p
+{
+	margin:0;
+	padding-left:1em;
+	padding-right:1rem;
+}
+.prodPack
+{
+	position:relative;
+}
+.moreProds
+{
+	display:none;
+	position:absolute;
+	margin-bottom:0.5rem;
+	bottom:0;
+	background-color:#fbdcec;
+	opacity:0.8;
+	width:100%;
+}
+.moreProds a
+{
+	text-decoration:none;
+	 padding:1rem;
+	font-size:1.3rem;
+	color:#784960;
+	margin:0 auto;
+	
+}
+/* 6. CONTEST PAGE STYLES*/
+/*Main Contest*/
+#gameIntro
+{
+	text-align:center;
+}
+#gameIntro h3
+{
+	font-size:17px;
+	color:#6d6e70;
+	
+}
+#gameIntro p
+{
+    margin:0 auto;
+}
+#gameIntro h2
+{
+	margin-top:50px;
+}
+#gameIntro h4
+{
+	color:#784960;
+	text-transform:uppercase;
+	font-family: 'Oswald', sans-serif;
+    margin:1rem auto;
+}
+#playGame, #playGameAgain, #playAgain /* All Buttons */
+{
+	font-size:17px;
+	color:#6d6e70;
+	height:50px;
+	background-color:#fff;
+	border:2px solid pink;
+	cursor:pointer;
+	text-transform:uppercase;
+    margin:1rem auto;
+}
+#playGame:hover, #playGameAgain:hover, #playAgain:hover
+{
+	box-shadow:-1px 1px 5px;
+}
+#instructionWrapper
+{
+	width:70%;
+	margin:0 auto;
+}
+#instructions
+{
+    font-size:16px;
+    color:#6d6e70;
+    text-align:justify;
+}
+/*All other screens remain hidden when the page first loads*/
+#gameStatic, #stimulusFrame, #testFrames, #finalScreen, #oopsScreen
+{
+	display:none;
+}
+#testFrames img
+{
+	cursor:pointer;
+}
+#stimulusFrame, #testFrames
+{
+    padding-bottom:4rem;
+}
+#stimulusFrame .col-4, #finalScreen .row .col-4, #oopsScreen .row .col-3, #oopsScreen .row .col-8, #oopsScreen .row .col-4
+{
+	margin:0 auto;
+}
+#testFrames
+{
+	width:80%;
+	margin:0 auto;
+}
+#testFrames img, #stimulusFrame img
+{
+	border:1px solid pink;
+	border-radius:10px;
+	box-shadow:-1px 1px 10px gray;
+}
+#testFrames .col-4
+{
+	padding:1em;
+}
+#timerBox, #questionCounter /*Timer styles*/
+{
+	margin:0 auto;
+	font-size:20px;
+}
+#timerBox
+{
+	font-size:20px;
+	background-color:#fff;
+}
+#main-timer p
+{
+	float:right;
+	font-size:20px;
+}
+#timerBox p 
+{
+    margin-left:0;
+    border: 2px solid pink;
+}
+/*Cookies image appear when the player earns some*/
+#cookieBar
+{
+	width:100%;
+	margin:0 auto;
+}
+/*Message Screen text when the section becomes visible*/
+#message p, #messagefinal p
+{
+	text-align:center;
+    font-size:18px;
+}
+#visitus
+{
+	color:gray;
+}
+#visitus:hover
+{
+	color:#784960;
+	font-weight:bold;
+}
+
+/* 7. MEDIA QUERY FOR TABLET*/
+@media all and (max-width:768px)
+{
+    /*Responsive Framework changes*/
+    .col-6
+    {
+        width:100%;
+    }
+    /*Header*/
+    #logoSpan, #main-navigation /*Main Navigation hides*/
+    {
+        display:none;
+    }
+    #respMenu /*Responsive Navigation becomes visible*/
+    {
+        z-index:100;
+        display:block;
+        padding-top:1rem;
+    }
+    #toggle-menu /*toggle-menu button*/
+    {
+        float:right;
+        width:50px;
+		height:50px;
+		margin-top:-3.5rem;
+        background:url("../images/background.jpg");
+        border:none;
+        border-radius:5px;
+    }
+    #toggle-menu>span
+    {
+       color:#666666;
+    }
+    #mini-nav /*Styles for the drop-down navigation*/
+    {
+        text-transform:uppercase;
+        background-color:#fff;
+        border:1px solid #f8d6dc;
+        border-radius:20px;
+    }
+    #mini-nav ul
+    {
+        width:100%;
+    }
+    #mini-nav ul li
+    {
+        margin-left:-2rem;
+		margin-top:1rem;
+        list-style:none;
+        text-align:center;
+    }
+    #mini-nav li a
+	{
+        font-weight:bold;
+        font-family: 'Oswald', sans-serif;
+		color:#666666;
+		text-decoration:none;	
+	}
+	#mini-nav li a:hover
+	{
+		border-bottom:5px solid #666666;
+	}
+    /*Timer Styles*/
+    #gameStatic p
+    {
+        float:none;
+    }
+    #timerBox p
+    {
+        margin:0 auto;
+    }
+    /*Instruction changes*/
+    #instructionWrapper
+    {
+        width:100%;
+    }
+    #instructions
+    {
+        margin-left:-10px;
+    }
+    /*Final Message screen*/
+    #finalScreen .row .col-4
+    {
+        width:60%;
+    }
+}
+/* 8. MEDIA QUERY FOR SCREEN A LITTLE SMALLER THAN TABLET*/
+ @media all and (max-width:600px)
+{
+    /*Responsive Framework changes*/
+    .row
+	{
+        -webkit-flex-wrap:wrap;/*Safari 6.1+*/
+        flex-wrap:wrap;
+	}
+    .col-4
+	{
+		width:100%;
+	}
+	.col-8
+	{	width:100%;
+	}
+    /*Changes in the width of test images*/
+    #testFrames>.row>.col-4
+    {
+        width:33.33%;
+    }
+    #stimulusFrame>.row>.col-4
+    {
+        width:33.33%;
+    }
+    #testFrames .col-4
+    {
+        padding:0.5em;
+    }
+    /*Changes in footer widths*/
+    #footer>.row
+    {
+        display:flex;
+    }
+    #footer>.row>.col-8
+    {
+        width:66.66%;
+        margin:0;
+    }
+    #footer>.row>.col-4
+    {
+        width:33.33%;
+         margin:0;
+    }
+    #footer-nav>ul>li:nth-child(even)
+    {
+        display:none;
+    }
+}
+/* 9. MEDIA QUERY FOR PHONE*/
+@media all and (max-width:320px)
+{
+    /*Responsive Framework changes*/
+    .col-3
+    {
+        width:80%;
+    }
+    /*Logo size changes*/
+    .logo
+	{
+		width:9rem;
+	}
+    /*toggle-menu button pulled down*/
+    #toggle-menu
+    {
+        margin-top:-3rem;
+    }
+    /*Changs in testframe row width*/
+    #testFrames
+    {
+        width:100%;
+    }
+}

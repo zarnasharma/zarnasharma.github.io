@@ -1,0 +1,507 @@
+/*ZARNA ALPESH SHARMA PORTFOLIO STYLESHEET
+
+TABLE OF CONTENTS:
+1. SETTING UP THE PAGE
+2. COMMON STYLES
+3. RESPONSIVE FRAMEWORK
+4. SECTION-WISE LAYOUTS
+5. MEDIA QUERY FOR LARGER SCREENS
+6. MEDIA QUERY FOR TABLET AND SMALLER SCREENS
+*/
+/*1. SETTING UP THE PAGE*/
+html
+{
+    box-sizing:border-box;
+    font-size:18px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color:#000;
+}
+*,*:before, *:after
+{
+    box-sizing:inherit;
+}
+body
+{
+    max-width:100%;
+    margin:0 auto;
+}
+/*2. COMMON STYLES*/
+.hide   /*these are used in the toggle menu for mobile and tab*/
+{
+    display:none;
+}
+.accessibility-hidden
+{
+    margin-left:-10000px;
+    position:absolute;
+}
+.hover:hover    /*the blue dash appearing on hovering nav link*/
+{
+    border-bottom:4px solid #24353F; /*change color*/
+}
+.selected   /*current page open*/
+{
+    border-bottom:4px solid #E82B42;
+}
+.wrapper
+{
+    width:980px;
+    margin:0 auto;
+}
+.fa
+{
+    color:#E82B42;
+    -webkit-transition:color 0.5s; /* Safari */
+    transition:color 0.5s;
+    transition-timing-function:ease;
+}
+.fa:hover
+{
+    color:#24353F;
+}
+*::-moz-selection
+{
+    background: #24353F; /* Firefox,Gecko Browsers */
+    color:#fff;
+}
+*::selection
+{
+    background: #24353F; /* WebKit Browsers */
+    color:#fff;
+}
+/*3. RESPONSIVE FRAMEWORK*/
+/* From https://github.com/zarnasharma/gridit.css */
+.responsiveImage 
+{
+    width:100%;
+    height:auto;
+}
+.row
+{
+    width:100%;
+    display:webkit-flex;/* Safari */
+    display:flex;
+}
+.col-12
+{
+    width:100%;
+}
+.col-11
+{
+    width:91.66%;
+}
+.col-10
+{
+    width:83.33%;
+}
+.col-9
+{
+    width:75%;
+}
+.col-8
+{
+    width:66.66%;
+}
+.col-7
+{
+    width:58.33%;
+}
+.col-6
+{
+    width:50%;
+}
+.col-5
+{
+    width:41.66%;
+}
+.col-4
+{
+    width:33.33%;
+}
+.col-3
+{
+    width:25%;
+}
+.col-2
+{
+    width:16.66%;
+}
+.col-1
+{
+    width:8.33%;
+}
+.col-1-of-5
+{
+    width:20%;
+}
+/* 4. SECTION-WISE LAYOUTS */
+/* Header */
+@-webkit-keyframes navDrop {
+    0% {
+       transform: translateY(-5rem);
+       opacity:0%;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity:100%;
+    }
+}
+@-moz-keyframes navDrop {
+    0% {
+       transform: translateY(-5rem);
+       opacity:0%;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity:100%;
+    }
+}
+@keyframes navDrop {
+    0% {
+       transform: translateY(-5rem);
+       opacity:0%;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity:100%;
+    }
+}
+@-webkit-keyframes fadeEase
+{
+    0% {
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+@-moz-keyframes fadeEase
+{
+    0% {
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+@keyframes fadeEase
+{
+    0% {
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+.fadeEase
+{
+    animation-name:fadeEase;
+    animation-duration:2s;
+    animation-timing-function: ease;
+}
+#nav
+{
+    border-top:9px solid #24353F;
+    border-bottom:1px solid #E3E4E5;
+    position:fixed;
+    z-index:10;
+    width:100%;
+    background-color:#fff;
+    padding:0.3rem 0;
+    top:0;
+    animation-name: navDrop;
+    animation-iteration-count:1;
+    animation-timing-function:ease-in-out;
+    animation-duration:1s;
+}
+.logo
+{
+    width:3rem;
+    height:auto;
+    margin:0.5rem 0;
+}
+#main-nav
+{
+    list-style:none;
+    float:right;
+}
+#main-nav li
+{
+    display:inline-block;
+    margin-top:0.3rem;
+}
+#main-nav li a
+{
+    text-decoration:none;
+    padding:0 1rem;
+    color:#000;
+}
+#introduction
+{
+    padding-top:6rem; /*pushes the section a little down the header*/
+    background-color:#E82B42;
+    border-bottom:1px solid #E3E4E5;
+    color:#fff;
+}
+#introduction .fa
+{
+    color:#fff;
+}
+#introduction .fa:hover
+{
+    color:#24353F;
+}
+#introduction .wrapper h2
+{
+    margin:7rem auto 0.4rem auto;
+    font-size:4rem;
+    text-align:center;
+}
+#introduction .wrapper p, #introduction .wrapper a, #technicals a
+{
+    margin:0 auto;
+    text-align:center;
+    padding:0 2rem;
+}
+#introduction>.wrapper>.row:nth-child(2)
+{
+    margin-top:1rem;
+    margin-bottom:3rem;
+}
+#introduction>.wrapper>.row:last-child
+{
+    padding-bottom:1rem;
+}
+#technicals
+{
+    margin:1rem 0;
+}
+#technicals h3
+{
+    text-align:right;
+    margin-right: 5rem;
+    margin-left: 8rem;
+    color:#E82B42;
+    font-size:1.1rem;
+    border-bottom:5px solid #24353F;
+}
+#technicals p
+{
+    margin:3rem auto 0 auto;
+    text-align:center;
+    color:#E82B42;
+}
+.technicals-ul,.simple-list
+{
+    list-style:none;
+    margin-left:-2rem;
+    color:#24353F;
+    margin-top:1.2rem;
+}
+.simple-list li
+{
+    margin:0.25rem 0;
+}
+.technicals-ul li:nth-child(2), .technicals-ul li:nth-child(3)
+{
+    font-size: 0.85rem;
+    margin-top: 0.2rem;
+    color: #696969;
+}
+.input
+{
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    background: none;
+    border: 2px solid #E82B42;
+    font-size: 0.9rem;
+    cursor:pointer;
+    box-shadow: 1px 5px 5px 1px #E3E4E5;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #24353F;
+    margin:1rem auto;
+    -webkit-transition: background-color 0.5s, color 0.5s; /* Safari */
+    transition: background-color 0.5s, color 0.5s;
+    transition-timing-function:ease;
+}
+.input:hover
+{
+    background-color:#24353F;
+    color:#fff;
+    border:2px solid #24353F;
+}
+/* Footer */
+#footer
+{
+    background-color:#f9f9f9;
+    border-top:1px solid #E3E4E5;
+    border-bottom:9px solid #24353F;
+}
+#footer a, #footer p
+{
+    margin:5px auto;
+    color:#000;
+    text-align:center;
+}
+#footer a
+{
+    text-decoration:none;
+    -webkit-transition:color 0.5s; /* Safari */
+    transition:color 0.5s;
+    transition-timing-function:ease;
+}
+#footer a:hover
+{
+    color:#E82B42;
+}
+#footer .col-12
+{
+    padding:2rem;
+}
+/* Scroll Up */
+#scrollUp
+{
+    position: fixed;
+    bottom: 1rem;
+    right: 5rem;
+    cursor:pointer;
+    z-index:10;
+}
+/* 5. MEDIA QUERY FOR LARGER SCREENS */
+@media all and (max-width:1200px)
+{
+    #scrollUp
+    {
+        right: 2rem;
+    }
+}
+@media all and (max-width:980px)
+{
+    .wrapper
+    {
+        width:90%;
+    }
+}
+/* 6. MEDIA QUERY FOR TABLET AND SMALLER SCREENS */
+@media all and (max-width:850px)
+{
+    /*Responsive Framework changes*/
+    .row {
+        -webkit-flex-wrap: wrap; /*Safari 6.1+*/
+        flex-wrap: wrap;
+    }
+    .col-1 {
+        width: 7%;
+    }
+    .col-2 {
+        width: 16.66%
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .col-7 {
+        width: 100%
+    }
+    .col-6 {
+        width: 100%
+    }
+    .col-5 {
+        width: 100%
+    }
+    .col-9 {
+        width: 100%
+    }
+    .col-8 {
+        width: 100%;
+    }
+    .col-10 {
+        width: 100%
+    }
+    .col-12 {
+        width: 100%;
+    }
+    .logo
+    {
+        margin-left:2rem;
+    }
+    #nav
+    {
+        display:none;
+    }
+    /*Responsive Navigation*/
+    #toggle-menu
+    {
+        display: block;
+        float: right;
+        width: 3rem;
+        height: 3rem;
+        margin: 0.5rem 2rem 0 0;
+        background-color: #fff;
+        border: 2px solid #E82B42;
+        box-shadow: 1px 5px 5px 1px #E3E4E5;
+        cursor: pointer;
+    }
+    #respMenu
+    {
+        display:flex;/*Removed the row class from html and added display and width here instead. got rid of the ul list flicker when switching from mobile to desktop view*/
+        width:100%;
+        background-color:#fff;
+        border-top:9px solid #24353F;
+        border-bottom:1px solid #E3E4E5;
+        position:fixed;
+        z-index:20;
+        -webkit-animation-name: navDrop;
+        -webkit-animation-iteration-count:1;
+        -webkit-animation-timing-function:ease-in-out;
+        -webkit-animation-duration:1s;
+        -moz-animation-name: navDrop;
+        -moz-animation-iteration-count:1;
+        -moz-animation-timing-function:ease-in-out;
+        -moz-animation-duration:1s;
+        animation-name: navDrop;
+        animation-iteration-count:1;
+        animation-timing-function:ease-in-out;
+        animation-duration:1s;
+    }
+    #mini-nav
+    {
+        padding-top:1px;
+        padding-bottom:1px;
+        position:fixed;
+        background-color:#fff;
+        border-bottom:9px solid #24353F;
+    }
+    #mini-nav ul /*Brings the menu list down as it gets hidden behind respmenu div*/
+    {
+        margin-top:6rem;
+        width:100%;
+    }
+    #mini-nav li
+    {
+        list-style:none;
+        margin-left:-2rem;
+        margin-top:2rem;
+        text-align:center;
+    }
+    #mini-nav li a
+    {
+        color:#000;
+        text-decoration:none;
+    }
+    #technicals
+    {
+        padding:0 1rem;
+    }
+    #technicals h3
+    {
+        margin:0;
+        text-align:left;
+    }
+}
+@media all and (max-width:500px)
+{
+    html
+    {
+        font-size:16px;
+    }
+}

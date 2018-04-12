@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+        <meta name="author" content="Zarna Alpesh Sharma" />
+        <meta name="description" content="Math Mania homepage" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+		<title>Math Mania</title>
+		<link rel="stylesheet" type="text/css" href="css/boardgame.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Henny+Penny' rel='stylesheet' type='text/css'/>
+		<link href='https://fonts.googleapis.com/css?family=Lora:400,700italic' rel='stylesheet' type='text/css'/>
+		<script src="js/boardgame4.js"></script>
+	</head>
+	<body>
+		<h2 class="always-hidden">Math Mania</h2>
+		<header>
+			<nav id="gameName" class="row">
+				<h1><a href="index.html">Math Mania</a></h1>
+			</nav>
+		</header>
+		<div id="main-wrapper" class="row">
+			<main id="main" class="col-9">
+				<section id="gameIntro">
+					<h2 class="always-hidden">Math Mania Introduction</h2>
+					<div class="row">
+						<h2 id="welcome">Welcome to <span>Math Mania</span> !</h2>
+					</div>
+					<div class="row">
+						<p>Math Mania is a simple boardgame that also assesses your basic arithmetic skills. Play this game for fun with your friends, at work, or anywhere at all.</p>
+					</div>
+					<div class="row">
+						<h3>Game Instructions</h3>
+					</div>
+					<div class="row">
+						<ol>
+							<li>The total game duration is 2 minutes.</li>
+							<li>Roll the dice to begin the game.</li>
+							<li>Choose the correct answer to move ahead in the game.</li>
+							<li>Every correct answer allows you to progress ahead in the game.</li>
+							<li>Every incorrect answer decrements the attempts left.</li>
+							<li>There are 20 levels to clear in 2 minutes.</li>
+							<li>You only have 3 chances to finish the game.</li>
+						</ol>
+					</div>
+					<div class="row">
+						<p>So what are you waiting for? Let's get started !</p>
+					</div>	
+					<div class="row">
+						<button id="playGame">Play Game</button>
+					</div>
+					<div class="row">
+						<p>Warning: This game is freakishly addictive. Ask the developer about it!</p>
+					</div>
+				</section>
+				<section id="main-game">
+					<h2 class="always-hidden">Math Mania Game Grid</h2>
+					<div id="rowOne" class="row">
+						<div id="bOne" class="col-2 gameBlocks">
+							<p>0</p>
+						</div>
+						<div id="bTwo" class="col-2 gameBlocks">
+							<p>1</p>
+						</div>
+						<div id="bThree" class="col-2 gameBlocks">
+							<p>2</p>
+						</div>
+						<div id="bFour" class="col-2 gameBlocks">
+							<p>3</p>
+						</div>
+						<div id="bFive" class="col-2 gameBlocks">
+							<p>4</p>
+						</div>
+						<div id="bSix" class="col-2 gameBlocks">
+							<p>5</p>
+						</div>
+					</div>
+					<div id="rowTwo" class="row">
+						<div id="bTwenty" class="col-2 gameBlocks">
+							<p>19</p>
+						</div>
+						<div class="col-8">
+							<div id="main-timer" class="row">
+								<div class="col-3">
+									<p>Time:</p>
+								</div>
+								<div class="col-3">
+									<div id="timerBox">
+										<p>120</p>
+									</div>
+								</div>
+								<div class="col-3">
+									<p>Chances:</p>
+								</div>
+								<div class="col-3">
+									<div id="chanceBox">
+										<p>3</p>
+									</div>
+								</div>
+							</div>	
+							<div class="row">
+								<div id="progressBar" class="col-12">
+									<div id="filler">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="bSeven" class="col-2 gameBlocks">
+							<p>6</p>
+						</div>
+					</div>
+					<div id="rowThree" class="row">
+						<div id="bNineteen" class="col-2 gameBlocks">
+							<p>18</p>
+						</div>
+						<div id="questionBlock" class="col-8">
+						</div>
+						<div id="bEight" class="col-2 gameBlocks">
+							<p>7</p>
+						</div>
+					</div>
+					<div id="rowFour" class="row">
+						<div id="bEighteen" class="col-2 gameBlocks">
+							<p>17</p>
+						</div>
+						<div id="option1" class="col-2">	
+						</div>
+						<div id="option2" class="col-2">	
+						</div>
+						<div id="option3" class="col-2">
+						</div>
+						<div id="option4" class="col-2">
+						</div>
+						<div id="bNine" class="col-2 gameBlocks">
+							<p>8</p>
+						</div>
+					</div>
+					<div id="rowFive" class="row">
+						<div id="bSeventeen" class="col-2 gameBlocks">
+							<p>16</p>
+						</div>
+						<div class="col-8">
+							<div class="row">
+								<div class="col-6">
+									<p>
+										<button id="rollDice">Roll Dice</button>
+									</p>
+								</div>
+								<div class="col-6">
+									<div id="diceBox">
+										<p>Click Roll To Begin</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="bTen" class="col-2 gameBlocks">
+							<p>9</p>
+						</div>
+					</div>
+					<div id="rowSix" class="row">
+						<div id="bSixteen" class="col-2 gameBlocks">
+							<p>15</p>
+						</div>
+						<div id="bFifteen" class="col-2 gameBlocks">
+							<p>14</p>
+						</div>
+						<div id="bFourteen" class="col-2 gameBlocks">
+							<p>13</p>
+						</div>
+						<div id="bThirteen" class="col-2 gameBlocks">
+							<p>12</p>
+						</div>
+						<div id="bTwelve" class="col-2 gameBlocks">
+							<p>11</p>
+						</div>
+						<div id="bEleven" class="col-2 gameBlocks">
+							<p>10</p>
+						</div>
+					</div>
+				</section>
+				<section id="wingame">
+					<h2 class="always-hidden">Victory Message Section</h2>
+					<div class="col-4 centreImage">
+						<img src="images/star.png" class="responsiveImg" alt="star Image"/>
+					</div>
+					<div class="col-12">
+						<p>Yay! You Won!</p>
+					</div>
+					<div class="col-12">
+						<p>Congratulations! Have a go at it one more time!</p>
+					</div>
+					<div class="row">
+						<button id="playAgainWin">Play Again</button>
+					</div>
+				</section>
+				<section id="losegame">
+					<h2 class="always-hidden">Try Again Message</h2>
+					<div class="col-4 centreImage">
+						<img id="star" src="images/sad.png" class="responsiveImg" alt="sad monkey face"/>
+					</div>
+					<div class="col-12">
+						<p>Awwww! Sad Monkey is sad for you.</p>
+					</div>
+					<div class="col-12">
+						<p>Why don't you try again?</p>
+					</div>
+					<div class="row">
+						<button id="playAgainLose">Play Again</button>
+					</div>
+				</section>
+			</main><!-- END OF MAIN -->
+			<aside id="sidebar" class="col-3">
+				<h2 class="always-hidden">Side Bar</h2>
+				<section id="topScores">
+					<h2 class="always-hidden">Top Scores and Fastest Time Section</h2>
+					<div class="row">
+						<h2>Top Players</h2><!--THESE VALUES IDEALLY COME FROM A DATABASE -->
+					</div>
+					<div class="row">
+						<ol>
+							<li>Senna123</li>
+							<li>Sidney</li>
+							<li>AnaMarie321</li>
+							<li>Christopher</li>
+							<li>Dimka</li>
+						</ol>
+					</div>
+					<div class="row">
+						<h2>Fastest Time</h2>
+					</div>
+					<div class="row">
+						<ol>
+							<li>Tia - 1:45</li>
+							<li>Sidney - 1:32</li>
+							<li>Ana - 1:22</li>
+							<li>Chris - 1:02</li>
+							<li>Adi - 0:54</li>
+						</ol>
+					</div>
+				</section>
+			</aside><!-- END OF SIDEBAR -->
+		</div><!-- END OF MAIN WRAPPER -->
+		<footer>
+			<section id="footer" class="row">
+				<h2 class="always-hidden">Footer</h2>
+				<p>&copy; Copyrights 2015, Zarna Alpesh Sharma
+			</section>
+		</footer><!-- END OF FOOTER -->
+        <!--Google Analytics-->
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-78025619-1', 'auto');
+                ga('send', 'pageview');
+        </script>
+    </body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+        <meta name="author" content="Zarna Alpesh Sharma" />
+        <meta name="description" content="Andre's sweettreats contest page" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+		<title>Sweet Treats | Contest</title>
+		<link rel="stylesheet" type="text/css" href="css/styleAndreZarna.css"/>
+		<script src="js/ContestPage.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+	</head>
+	<body>
+        <h1 class="always-hidden">Zarna's Projects: SweetTreats Contest Page</h1>
+		<div id="main-wrapper">
+			<div id="wrapper">
+				<header id="header">
+					<section id="logoSpan">
+                        <h2 class="always-hidden">Logo</h2>
+						<div class="row">
+							<img src="images/logo.png" alt="Andre SweetTreats Logo" />
+						</div>
+					</section>
+					<nav id="main-navigation">
+                        <h2 class="always-hidden">Main Navigation</h2>
+						<div class="row">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Menu</a></li>
+								<li><a href="#">Daily Specials</a></li>
+								<li><a href="#">Events</a></li>
+								<li class="selected"><a href="contests.html">Contests</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</nav>
+                    <div id="respMenu" class="row">
+						<div class="col-3">
+							<a href="index.html"><img class="logo" src="images/logo.png" alt="Site Logo"/></a>
+						</div>
+						<div class="col-9">
+							<button id="toggle-menu"><span class="fa fa-bars fa-2x" aria-hidden="true"></span>
+							</button>
+						</div>
+					</div>
+					<nav id="mini-nav" class="toggleHide">
+						<h2 class="always-hidden">Responsive Navigation</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Menu</a></li>
+							<li><a href="#">Daily Specials</a></li>
+							<li><a href="#">Events</a></li>
+							<li><a class="selected" href="contests.html">Contests</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+				</header><!-- End of Header -->
+				<main id="mainContest">
+					<section id="gameIntro" class="row">
+                        <h2 class="always-hidden">Contest Description</h2>
+						<div class="col-12">
+                            <h2 class="line"><span>Win a Free Dessert Meal!</span></h2>
+                        </div>
+                        <div class="col-12">
+                            <h3>Play this game and stand a chance to win a free dessert meal for you and your friends !</h3>
+                        </div>
+                        <div class="col-12">
+                            <p>All you have to do is clear all 12 levels of this game in 30 seconds. The game is pretty simple.</p>
+                        </div>
+                        <div class="col-12">
+                            <h4>Instructions</h4>
+                        </div>
+						<div id="instructionWrapper" class="col-12">
+							<ol id="instructions">
+                                <li>The illustrated version of one of our delicious products will be displayed.</li>
+                                <li>This will be followed by six other images.</li>
+                                <li>All you have to do is select the image that matches with the image displayed to you earlier.</li>
+                                <li>Every correct answer gets you 2 cookies.</li>
+                                <li>Collect all 24 to win !</li>
+                                <li>Timer begins once the options appear and pauses while the test image is being displayed.</li>
+                            </ol>
+						</div>
+                        <div class="col-12">
+                            <p>Simple, eh?</p>
+                        </div>
+                        <div class="col-12">
+                            <p>P.S. We've heard the cookie monster is on the loose.</p>
+                        </div>
+                        <div class="col-12">
+                            <button id="playGame">Let's Get Cookies</button>
+                        </div>
+					</section>
+					<section id="gameStatic">
+                        <h2 class="always-hidden">Game Timer</h2>
+						<div id="main-timer" class="row">
+							<div class="col-12">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>Time Remaining</p>
+                                    </div>
+                                     <div class="col-6">
+                                        <div id="timerBox" class="row">
+                                            <p>30</p>
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+						<div id="cookieBar" class="row">
+						</div>
+						<div class="row">
+							<div id="questionCounter" class="col-12">
+								<p></p>
+							</div>
+						</div>
+					</section>
+					<section id="stimulusFrame">
+                        <h2 class="always-hidden">Question Image</h2>
+						<div class="row">
+							<div class="col-4">
+								<img id="stimulusImage" alt="test Image" class="responsiveImg" src="#"/>
+							</div>
+						</div>
+					</section>
+					<section id="testFrames">
+                        <h2 class="always-hidden">Answer Options</h2>
+						<div class="row">
+							<div class="col-4">
+								<img id="one" class="responsiveImg" alt="option Image" src="#"/>
+							</div>
+							<div class="col-4">
+								<img id="two" class="responsiveImg" alt="option Image" src="#"/>
+							</div>
+							<div class="col-4">
+								<img id="three" class="responsiveImg" alt="option Image" src="#"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-4">
+								<img id="four" class="responsiveImg" alt="option Image" src="#"/>
+							</div>
+							<div class="col-4">
+								<img id="five" class="responsiveImg" alt="option Image" src="#"/>
+							</div>
+							<div class="col-4">
+								<img id="six" class="responsiveImg" alt="option Image" src="#"/>
+							</div>
+						</div>
+					</section>
+					<section id="finalScreen">
+                        <h2 class="always-hidden">Time Up Message</h2>
+						<div id="messagefinal" class="row">
+                            <div class="col-4">
+                                <img class="responsiveImg" src="images/timesup.jpeg" alt="cake"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <p>Oops! Time's Up !</p>
+                            </div>
+                        </div>
+                        <div class="row">
+							<button id="playAgain">Play Again</button>
+                        </div>
+					</section>
+					<section id="oopsScreen">
+                        <h2 class="always-hidden">Cookie Monster Message</h2>
+						<div id="message" class="row">
+                            <div class="col-3"> 
+                                 <img alt="cookie monster" class="responsiveImg" src="images/monster.png"/>
+                            </div>
+							<div class="row">
+                                <div class="col-8">
+                                    <p>Cookie Monster ate your cookies !!!</p>
+                                    <p>Why don't you <a id="visitus" href="#">visit us</a> and enjoy as many cookies as you like ?</p>
+                                </div>
+                            </div>
+							<div class="row">
+                                <button id="playGameAgain">Play Again</button>
+                            </div>
+						</div>
+					</section>
+				</main><!--End of Main -->
+			</div><!--End of wrapper -->
+			<footer id="footer">
+                <h2 class="always-hidden">Footer</h2>
+                <div class="row">
+                    <p><a href="#header">Jump to top</a></p>
+                </div>
+				<div class="row">
+                    <div class="col-8">
+						<nav id="footer-nav">
+                            <h3 class="always-hidden">Footer Navigation</h3>
+							<ul>
+								<li><a href="#">Gift Cards</a></li>
+								<li>|</li>
+								<li><a href="#">Site Map</a></li>
+								<li>|</li>
+								<li><a href="#">Careers</a></li>
+								<li>|</li>
+								<li><a href="#">Locations</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-4">
+						<div id="spans">
+							<span class="fa fa-facebook"></span>
+							<span class="fa fa-instagram"></span>
+							<span class="fa fa-pinterest"></span>
+							<span class="fa fa-twitter"></span>
+						</div>
+					</div>
+				</div>
+			</footer><!-- End of footer -->
+		</div><!--End of main wrapper-->
+                <!--Google Analytics-->
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-78025619-1', 'auto');
+                ga('send', 'pageview');
+        </script>
+	</body><!--End of body -->
+</html>
