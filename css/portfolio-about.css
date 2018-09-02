@@ -279,8 +279,7 @@ body
 #technicals h3
 {
     text-align:right;
-    margin-right: 5rem;
-    margin-left: 8rem;
+    margin:0 5rem;
     color:#E82B42;
     font-size:1.1rem;
     border-bottom:5px solid #24353F;
@@ -291,6 +290,12 @@ body
     text-align:center;
     color:#E82B42;
 }
+
+#technicals ul.links-list a {
+    color:#E82B42;
+    padding: 0;
+}
+
 .technicals-ul,.simple-list
 {
     list-style:none;
